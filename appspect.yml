@@ -4,7 +4,5 @@ files:
   - source: /
     destination: /home/ec2-user/pinlend
 hooks:
-  # BeforeInstall:
-  #   - location: Scripts/installdeps.sh
   ApplicationStart:
     - location: scripts/startapp.sh
