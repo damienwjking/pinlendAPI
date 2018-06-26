@@ -1,0 +1,80 @@
+{
+  "_meta": {
+    "sources": [
+      "loopback/common/models",
+      "loopback/server/models",
+      "../common/models",
+      "./models"
+    ],
+    "mixins": [
+      "loopback/common/mixins",
+      "loopback/server/mixins",
+      "../common/mixins",
+      "./mixins"
+    ]
+  },
+  "User": {
+    "dataSource": "pinlenddb",
+    "public": false
+  },
+  "AccessToken": {
+    "dataSource": "pinlenddb",
+    "public": false
+  },
+  "ACL": {
+    "dataSource": "pinlenddb",
+    "public": false
+  },
+  "RoleMapping": {
+    "dataSource": "pinlenddb",
+    "public": false,
+    "options": {
+      "strictObjectIDCoercion": true
+    }
+  },
+  "Role": {
+    "dataSource": "pinlenddb",
+    "public": false
+  },
+  "Comment": {
+    "dataSource": "pinlenddb",
+    "public": true
+  },
+  "Conversation": {
+    "dataSource": "pinlenddb",
+    "public": true
+  },
+  "ConversationUser": {
+    "dataSource": "pinlenddb",
+    "public": true
+  },
+  "Item": {
+    "dataSource": "pinlenddb",
+    "public": true
+  },
+  "ItemRent": {
+    "dataSource": "pinlenddb",
+    "public": true
+  },
+  "Message": {
+    "dataSource": "pinlenddb",
+    "public": true
+  },
+  "Payment": {
+    "dataSource": "pinlenddb",
+    "public": true
+  },
+  "PinlendUser": {
+    "dataSource": "pinlenddb",
+    "public": true,
+    "options": {}
+  },
+  "Tracktype": {
+    "dataSource": "pinlenddb",
+    "public": true
+  },
+  "Upload": {
+    "dataSource": "pinlenddb",
+    "public": true
+  }
+}
